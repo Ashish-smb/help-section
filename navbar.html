@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Owl Carousel min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Font Asowme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Output Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<!-- reponsive navbar of packers -->
+<nav class="container mx-auto flex flex-col lg:flex-row justify-around lg:items-center relative" x-data="{ showSidebar: false }">
+    <!-- Logo and Toggle Button -->
+    <div class="flex items-center justify-between w-full lg:w-auto relative">
+        <a href="#" id="logo" class="flex items-center justify-between text-xl md:text-3xl font-extrabold text-primary">
+            <img src="assets/imgs/logo.png" alt="Shiva Furnitures Logo" class="">
+            
+        </a>
+        <button class="lg:hidden block text-gray-900 ml-4" @click="showSidebar = !showSidebar" aria-label="Toggle sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <form action="index.html" class="max-xl:hidden">
+        <div class="border">
+            <i class="fa-solid fa-magnifying-glass px-3"></i>
+            <input type="search" class="w-[500px] p-3 outline-none">
+            <a href="#" class="btn bg-red-600 text-white hover:bg-red-500 rounded">search</a>
+        </div>
+
+    </form>
+
+    <!-- Mobile Sidebar -->
+    <div :class="{ 'translate-x-0': showSidebar, '-translate-x-full': !showSidebar }" 
+         class="fixed inset-y-0 left-0 w-64 bg-black text-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 lg:hidden">
+        <div class="p-4">
+            <button @click="showSidebar = false" class="text-white">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+        </div>
+        <ul class="mt-5 tracking-wider space-y-4 text-sm font-medium uppercase">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Packers and Movers</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Car Transpartation</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Hire Truck Tempo</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Cargo Services</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Transport Services</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Warhouse Services</a></li>
+        </ul>
+    </div>
+
+    <div class="text-red-600 text-lg flex justify-center items-center font-semibold gap-2 max-lg:hidden">
+        <a href="#"><i class="fa-solid fa-phone text-2xl"></i></a>
+        +91-9910705147
+        <div class="text-sm text-black">(For Support)</div>
+    </div>
+</nav>
+
+<!-- responsive navbar of wooden -->
+ <!-- topbar -->
+<nav class="px-14 py-4 flex justify-between items-center" x-data="{ showSidebar: false }">
+    <!-- Logo and Toggle Button -->
+    <div class=" w-full lg:w-auto relative flex justify-between">
+        <a href="#" id="logo" class="flex items-center w-1/2 justify-between md:text-3xl font-extrabold text-primary">
+            <img src="assets/imgs/wood-logo.png" class="w-1/2 lg:w-full">
+        </a>
+        <button class="lg:hidden block text-gray-900 ml-4" @click="showSidebar = !showSidebar" aria-label="Toggle sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Sidebar -->
+    <div :class="{ 'translate-x-0': showSidebar, '-translate-x-full': !showSidebar }" 
+         class="fixed inset-y-0 left-0 w-64 bg-black text-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 md:block lg:hidden">
+        <div class="p-4">
+            <button @click="showSidebar = false" class="text-white">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+        </div>
+        <ul class="mt-5 tracking-wider space-y-4 text-sm font-medium capitalize">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">product</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">show know</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">tools</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">services</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">contact us</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">more</a></li>
+        </ul>
+    </div>
+
+    <!-- dekstop -->
+    <div class="hidden lg:block">
+        <ul class="nav-links capitalize flex items-center font-semibold text-slate-500 text-sm ">
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Products</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Shop Know</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Tools</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Services</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Inspiration</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">Contact Us</a>
+            </li>
+            <li class="  hover:text-white hover:underline hover:bg-red-600 duration-500 px-8 py-3 cursor-pointer">
+                <a href="javascript:void(0)">More</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+</body>
+<!-- All JS Links -->
+<!-- AlpineJs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.js"></script>
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Custom Js -->
+<script src="assets/js/main.js"></script>
+<!-- Js Link Ends Here -->
+</html>

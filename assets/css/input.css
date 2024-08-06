@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* medicare carousel dots */
+    .hero-area .hero-area-carousel .owl-dots {
+    @apply p-1 text-center bg-slate-400 inline absolute bottom-3 left-[45%] rounded-full;
+    }
+    .hero-area .hero-area-carousel .owl-dots .owl-dot {
+        @apply w-2 h-2 p-2.5 bg-slate-200 m-2 rounded-full;
+    }
+    .hero-area .hero-area-carousel .owl-dots .owl-dot.active {
+        @apply bg-white w-8 rounded-lg duration-1000;
+    }
+    
+    /* testimonial carouesl */
+    .testimonial-section .testimonial-content .owl-dots {
+    padding: 10px;
+    }
+    .testimonial-section .testimonial-content .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 3px;
+    }
+    .testimonial-section .testimonial-content .owl-dots .owl-dot.active {
+    background-color: white;
+    }
+
+    /* menu-tab of car-rent */
+    .tab-menu .tab-menu-links a.active {
+        border-bottom: 2px solid orangered;
+        box-shadow: none;
+    }
+    .tab-menu .menu-tab > div {
+        display: none;
+    }
+    .tab-menu .menu-tab > div.active {
+        display: block;
+    }
+    
+}

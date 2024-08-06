@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Owl Carousel min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Font Asowme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Output Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+<!-- menu table of car-rental with carousel -->
+<div class="tab-menu px-10 relative">
+    <div class="border rounded-lg px-4 py-4">
+        <h2 class="text-2xl font-semibold">Top Most Searched Cars</h2>
+        <div class="tab-menu-links capitalize flex text-sm my-4">
+            <a href="javascript:void(0)" data-menu="#suv" class="text-black px-6 py-3 active hover:text-black duration-300">
+                SUV
+            </a>
+            <a href="javascript:void(0)" data-menu="#hatchback" class="text-black px-6 py-3 hover:text-black duration-300">
+                hatchback
+            </a>
+            <a href="javascript:void(0)" data-menu="#sedan" class="text-black px-6 py-3 hover:text-black duration-300">
+                sedan
+            </a>
+            <a href="javascript:void(0)" data-menu="#muv" class="text-black px-6 py-3 hover:text-black duration-300">
+                MUV
+            </a>
+            <a href="javascript:void(0)" data-menu="#luxury" class="text-black px-6 py-3 hover:text-black duration-300">
+                luxury
+            </a>
+        </div>
+        
+        <div class="menu-tab">
+            <div class="options active" id="suv">
+                <!-- suv btns -->
+                <div class="btns">
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute left-5 z-10 top-[45%]" id="suv-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute right-5 z-10 top-[45%]" id="suv-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="owl-carousel suv-carousel active">
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Thar <br>
+                                Rs11.35 - 17.60 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Bolero <br>
+                                Rs9.79 - 10.91 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Scorpio<br>
+                                Rs13.62 - 17.42 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Tata Punch <br>
+                                Rs6.13 - 10.20 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="options" id="hatchback">
+                <!-- hatchback btns -->
+                <div class="btns">
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute left-5 z-10 top-[45%]" id="hatchback-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute right-5 z-10 top-[45%]" id="hatchback-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="owl-carousel hatchback-carousel">
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Thar <br>
+                                Rs11.35 - 17.60 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Bolero <br>
+                                Rs9.79 - 10.91 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Scorpio<br>
+                                Rs13.62 - 17.42 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Tata Punch <br>
+                                Rs6.13 - 10.20 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="options" id="sedan">
+                <!-- sedan btns -->
+                <div class="btns">
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute left-5 z-10 top-[45%]" id="sedan-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute right-5 z-10 top-[45%]" id="sedan-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="owl-carousel sedan-carousel">
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Thar <br>
+                                Rs11.35 - 17.60 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Bolero <br>
+                                Rs9.79 - 10.91 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Scorpio<br>
+                                Rs13.62 - 17.42 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Tata Punch <br>
+                                Rs6.13 - 10.20 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="options" id="muv">
+                <!-- muv btns -->
+                <div class="btns">
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute left-5 z-10 top-[45%]" id="muv-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute right-5 z-10 top-[45%]" id="muv-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="owl-carousel muv-carousel">
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Thar <br>
+                                Rs11.35 - 17.60 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Bolero <br>
+                                Rs9.79 - 10.91 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Scorpio<br>
+                                Rs13.62 - 17.42 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Tata Punch <br>
+                                Rs6.13 - 10.20 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="options" id="luxury">
+                <!-- luxury btns -->
+                <div class="btns">
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute left-5 z-10 top-[45%]" id="luxury-prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="border px-4 py-2 shadow-lg rounded-full bg-slate-200 hover:bg-white duration-500 absolute right-5 z-10 top-[45%]" id="luxury-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="owl-carousel luxury-carousel">
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Thar <br>
+                                Rs11.35 - 17.60 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Bolero <br>
+                                Rs9.79 - 10.91 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Mahindra Scorpio<br>
+                                Rs13.62 - 17.42 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="border inline-block">
+                        <div class="wood-img h-[200px] w-full">
+                            <img src="https://live.staticflickr.com/632/31837264814_10c30d01da_h.jpg" class="h-full object-cover w-full" alt="">
+                        </div>
+                        <div class="wood-content space-y-4 p-4">
+                            <h2 class="font-semibold">
+                                Tata Punch <br>
+                                Rs6.13 - 10.20 Lakh*
+                            </h2>
+                            <button class="border border-orange-600 text-orange-600 inline-block w-full py-1" >
+                                View Seller Details
+                            </button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>    
+
+    </div>
+</div>
+    
+</body>
+<!-- All JS Links -->
+<!-- AlpineJs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.js"></script>
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Custom Js -->
+ <!-- car carousel and menu tab -->
+ <script>
+
+const btn = $('.tab-menu .tab-menu-links a');
+const tab = $('.tab-menu .menu-tab > div ');
+btn.click(function() {
+    btn.removeClass('active');
+    $(this).addClass('active');
+    tab.removeClass('active');
+    $($(this).data('menu')).addClass('active');
+    console.log( $(this).data('menu') );
+});
+
+// menu-tab carousel
+// suv carousel
+const suv = $('.suv-carousel');
+$('#suv-prev').click(function () {
+    suv.trigger('prev.owl.carousel');
+});
+$('#suv-next').click(function() {
+    suv.trigger('next.owl.carousel');
+});
+$('.suv-carousel').owlCarousel({
+    loop:true,
+    margin: 20,
+    autoplay:true,
+    responsive : {
+        0 : {
+            items:2,
+        },
+        768 : {
+            items:4,
+        }
+    }
+});
+// hatchback
+const hatchback = $('.hatchback-carousel');
+$('#hatchback-prev').click(function () {
+    hatchback.trigger('prev.owl.carousel');
+});
+$('#hatchback-next').click(function() {
+    hatchback.trigger('next.owl.carousel');
+});
+$('.hatchback-carousel').owlCarousel({
+    loop:true,
+    margin: 20,
+    autoplay:true,
+    responsive : {
+        0 : {
+            items:2,
+        },
+        768 : {
+            items:4,
+        }
+    }
+});
+// sedan
+const sedan = $('.sedan-carousel');
+$('#sedan-prev').click(function () {
+    sedan.trigger('prev.owl.carousel');
+});
+$('#sedan-next').click(function() {
+    sedan.trigger('next.owl.carousel');
+});
+$('.sedan-carousel').owlCarousel({
+    loop:true,
+    margin: 20,
+    autoplay:true,
+    responsive : {
+        0 : {
+            items:2,
+        },
+        768 : {
+            items:4,
+        }
+    }
+});
+// muv
+const muv = $('.muv-carousel');
+$('#muv-prev').click(function () {
+    muv.trigger('prev.owl.carousel');
+});
+$('#muv-next').click(function() {
+    muv.trigger('next.owl.carousel');
+});
+$('.muv-carousel').owlCarousel({
+    loop:true,
+    margin: 20,
+    autoplay:true,
+    responsive : {
+        0 : {
+            items:2,
+        },
+        768 : {
+            items:4,
+        }
+    }
+});
+// luxury
+const luxury = $('.luxury-carousel');
+$('#luxury-prev').click(function () {
+    luxury.trigger('prev.owl.carousel');
+});
+$('#luxury-next').click(function() {
+    luxury.trigger('next.owl.carousel');
+});
+$('.luxury-carousel').owlCarousel({
+    loop:true,
+    margin: 20,
+    autoplay:true,
+    responsive : {
+        0 : {
+            items:2,
+        },
+        768 : {
+            items:4,
+        }
+    }
+});
+
+
+ </script>
+
+<script src="assets/js/main.js"></script>
+<!-- Js Link Ends Here -->
+</html>
