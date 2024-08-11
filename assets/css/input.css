@@ -40,5 +40,16 @@
     .tab-menu .menu-tab > div.active {
         display: block;
     }
-    
+    /* menu-tab travel tourisum */
+    .menu-tab .menu-tab-links a.active {
+        background-color: rgb(37, 99, 235);
+        color: white;
+        box-shadow: none;
+    }
+    .menu-tab .menu-tab-option > div {
+        display: none;
+    }
+    .menu-tab .menu-tab-option > div.active {
+        display: block;
+    }
 }
